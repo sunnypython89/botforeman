@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "botforeman"
+dynamic = ["version"]
+description = "Inspectable orchestration for trusted, specialized evaluators"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Sunny Python"}]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/sunnypython89/botforeman"
+
+[tool.setuptools.dynamic]
+version = {attr = "botforeman.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["botforeman*"]
+
+[tool.setuptools.package-data]
+botforeman = ["**/*.md", "cycle/probes.jsonl"]

@@ -33,3 +33,20 @@ adapters/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Private Copycat workspaces and generated experiments
+experiments/
+datasets/
+models/
+copycat*adapter/
+gold*.jsonl
+replay*.jsonl
+benchmark*results*
+*.log
+tmp/
+tmp*/
+.coverage
+tests/.*-test-*/
+tests/.cycle-fixture-*/
+credentials*
+secrets*
