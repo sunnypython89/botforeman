@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Local runs and large artifacts
+runs/
+outputs/
+logs/
+checkpoints/
+adapters/
+*.safetensors
+*.pt
+*.pth
+*.gguf
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
